@@ -1,0 +1,89 @@
+body, html {
+    height: 100%;
+  }
+
+.navbar {
+    min-height: 80px;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+.navbar-brand {
+    padding: 0 15px;
+    height: 80px;
+    line-height: 80px;
+    margin-top: 23px;
+  }
+  
+.navbar-toggle {
+    /* (80px - button height 34px) / 2 = 23px */
+    margin-top: 23px;
+    padding: 9px 10px !important;
+  }
+
+.nav-custom {
+    background-color: #EF5D5D;
+    margin-right: 10px;
+    color: white;
+}
+
+.active {
+    text-decoration-line: underline;
+    text-decoration-color: #EF5D5D !important;
+}
+
+.bg {
+    background-image: url("images/cover_image_2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100%;
+    display: block;
+    margin-bottom: 75px;
+}
+
+.welcome_text h1 {
+    text-align: center;
+    padding-top: 10%;
+    font-size: 65px;
+    color: white;
+}
+.welcome_text p {
+    text-align: center;
+    padding-top: 10px;
+    font-size: 20px;
+    color: white;
+}
+
+.welcome_text  {
+    text-align: center;
+    padding-top: 10px;
+    font-weight: bold;
+}
+.buttonsWrapper {
+    display: inline-block;
+}
+
+.btn-custom {
+    background-color: #EF5D5D !important;
+
+}
+
+.sub-title {
+ margin-bottom: 75px;
+}
+
+.infoCard {
+    display: flex;
+    margin-top: auto;
+}
+.infoCard img {
+    width: auto;
+    max-height: 450px;
+}
+.cardText {
+    text-align: center;
+    padding: 10%;
+}
+.cardText h2 {
+    color: #EF5D5D;
+}
