@@ -1,132 +1,191 @@
-body, html {
-    height: 100%;
-  }
+body,
+html {
+  height: 100%;
+  font-family: "Montserrat", sans-serif;
+}
 
 .navbar {
-    max-height: 100px;
-    font-family: 'Roboto', sans-serif;
-  }
-  
+  max-height: 100px;
+  font-family: "Roboto", sans-serif;
+}
+
 .navbar-brand {
-    padding: 0 15px;
-    height: 80px;
-    line-height: 80px;
-    margin-top: 23px;
-  }
+  padding: 0 15px;
+  height: 80px;
+  line-height: 80px;
+  margin-top: 23px;
+}
 .logo {
-    width: auto;
-    max-height: 60px;
+  width: auto;
+  max-height: 60px;
 }
 
 .nav-item {
-    margin-right: 20px;
+  margin-right: 20px;
 }
-  
+
 .navbar-toggle {
-    /* (80px - button height 34px) / 2 = 23px */
-    margin-top: 23px;
-    padding: 9px 10px !important;
-  }
+  /* (80px - button height 34px) / 2 = 23px */
+  margin-top: 23px;
+  padding: 9px 10px !important;
+}
 
 .nav-custom {
-    background-color: #EF5D5D;
-    margin-right: 10px;
-    color: white;
+  background-color: #ef5d5d;
+  margin-right: 10px;
+  color: white;
 }
 
 .active {
-    text-decoration-line: underline;
-    text-decoration-color: #EF5D5D !important;
+  border-bottom: 5px solid !important;
+  border-color: #ef5d5d !important;
 }
 
 .bg {
-    background-image: url("images/cover_image_2.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 100%;
-    display: block;
-    margin-bottom: 75px;
+  background-image: url("images/cover_image_2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100%;
+  display: block;
+  margin-bottom: 75px;
 }
 
 .welcome_text h1 {
-    text-align: center;
-    padding-top: 10%;
-    font-size: 65px;
-    color: white;
+  text-align: center;
+  padding-top: 10%;
+  font-size: 65px;
+  color: white;
 }
 .welcome_text p {
-    text-align: center;
-    padding-top: 10px;
-    font-size: 20px;
-    color: white;
+  text-align: center;
+  padding-top: 10px;
+  font-size: 20px;
+  color: white;
 }
 
-.welcome_text  {
-    text-align: center;
-    padding-top: 10px;
-    font-weight: bold;
+.welcome_text {
+  text-align: center;
+  padding-top: 10px;
+  font-weight: bold;
 }
 .buttonsWrapper {
-    display: inline-block;
+  display: inline-block;
 }
 
 .btn-custom {
-    background-color: #EF5D5D !important;
-
+  background-color: #ef5d5d !important;
+  color: white;
+  border: none;
 }
 
 .sub-title {
- margin-bottom: 75px;
+  margin-bottom: 75px;
 }
 
 .infoCard {
-    display: flex;
-    margin-top: auto;
+  display: flex;
+  margin-top: auto;
+  background-color: #f4f4f4;
 }
 .infoCard img {
-    width: auto;
-    max-height: 500px;
-    margin: 10px 0 5px 0;
+  width: auto;
+  max-height: 500px;
+  margin: 10px 0 5px 0;
 }
 .cardText {
-    text-align: center;
-    padding: 10%;
-    max-width: 50%;
+  text-align: center;
+  padding: 10%;
+  max-width: 50%;
 }
 .cardText h2 {
-    color: #EF5D5D;
+  color: #ef5d5d;
 }
 i {
-    color: #EF5D5D;
-    justify-content: center;
+  color: #ef5d5d;
+  justify-content: center;
 }
 .col {
-    text-align: center;
+  text-align: center;
 }
 
-.col i, h4, p {
-    padding: 10px;
+.col i,
+h4,
+p {
+  padding: 10px;
 }
 
 .carouselslide {
-    display: none;
-    text-align: center;
+  display: none;
+  text-align: center;
 }
 
 #carouselWrapper {
-    margin-top: 10%;
-    text-align: center;
+  margin-top: 10%;
+  text-align: center;
 }
 
 .btnSlide {
-    float: center;
-    padding: 10px;
-    margin-bottom: 5px;
-    border: none;
-    color: white;
+  float: center;
+  padding: 10px;
+  margin-bottom: 5px;
+  border: none;
+  color: white;
 }
 
 .card {
-    text-align: center;
+  text-align: center;
+}
+
+.pageWrapper {
+  text-align: center;
+  background-color: #f4f4f4;
+  padding-bottom: 50px;
+}
+
+.redLine {
+  width: 15%;
+  background-color: #ef5d5d;
+  height: 3px;
+  margin: auto;
+}
+
+.servicesWrapper {
+  display: flex;
+  margin-left: 24%;
+}
+.serviceCard {
+  padding: 20px;
+  background-color: white;
+  color: #ef5d5d;
+  margin: 10px;
+  align-content: center;
+}
+
+.serviceCard:hover {
+  box-shadow: 5px 5px 5px grey;
+}
+
+.bg-custom {
+  background-color: #ef5d5d;
+  border: none;
+  text-align: center;
+}
+
+.careersForm {
+    background-color: white;
+    margin: auto;
+    padding: 15px;
+    width: 75%;
+    border-radius: 25px;
+}
+.formsField {
+    padding: 10px;
+}
+.careersText {
+    color: white;
+}
+
+a {
+    text-decoration: none;
 }
