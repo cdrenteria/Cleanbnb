@@ -143,16 +143,20 @@ p {
   padding-bottom: 50px;
 }
 
+.servicesTitle {
+    padding-top: 50px;
+}
 .redLine {
   width: 15%;
   background-color: #ef5d5d;
   height: 3px;
   margin: auto;
+  margin-bottom: 50px;
 }
 
 .servicesWrapper {
   display: flex;
-  margin-left: 24%;
+  margin-left: 17%;
 }
 .serviceCard {
   padding: 20px;
@@ -164,6 +168,19 @@ p {
 
 .serviceCard:hover {
   box-shadow: 5px 5px 5px grey;
+}
+
+.cleaningDescription {
+  text-align: center;
+  font-size: large;
+  padding-top: 10px;
+}
+
+.cleaningDescription p {
+    border-bottom: #f4f4f4 solid;
+    padding-top: 15px;
+    padding-bottom: 15px;
+
 }
 
 .bg-custom {
@@ -221,4 +238,11 @@ a {
   border: none;
   color: #ef5d5d;
   background-color: #f4f4f4;
+}
+
+footer {
+  padding: 20px;
+  text-align: center;
+  background-color: gray;
+  color: #ef5d5d !important;
 }
