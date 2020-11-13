@@ -32,7 +32,7 @@
                             <a class="nav-link active" href="careers.html">Careers</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="contact.php">Contact</a>
+                            <a class="nav-link" href="contact.html">Contact</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-white rounded nav-custom" href="curent_clients.html">Current Clients</a>
@@ -57,17 +57,53 @@
             <p>Want to join our growing team?</p>
             <h3 class="careersTitle">Submit an application today</h3>
         </div>
-        <form action="post" class="careersForm">
-            <div class="formField">
-                <label for="firstName">First Name:</label>
-                <input type="text" id="firstName">
-            </div>
-            <div class="formField">
-                <label for="lastName">Last Name:</label>
-                <input type="text" id="lastName">
-            </div>
-            <button class="btn-custom" type="submit">Submit</button>
-        </form>
+        <div class="careersFormWrapper">
+           <form action="post" class="careersForm">
+                <div class="formField">
+                    <h5>First Name:</h5>
+                    <input type="text" id="firstName">
+                </div>
+                <div class="formField">
+                    <h5>Last Name:</h5>
+                    <input type="text" id="lastName">
+                </div>
+                <div class="formField">
+                    <h5>Email:</h5>
+                    <input type="email" id="email">
+                </div>
+                <div class="formField">
+                    <h5>City:</h5>
+                    <input type="city" id="city">
+                </div>
+                <div class="formField" id="uploadBox">
+                    <h5>Resume:</h5>
+                    <input type="file" id="resume">
+                </div>
+                <div class="formField">
+                    <p>Are you legally allowed to work in the US?</p>
+                    <label for="yes">Yes</label>
+                    <input type="radio" id="yes" name="legalEmployment">
+                    <label for="no">No</label>
+                    <input type="radio" id="no" name="legalEmployment">                    
+                </div>
+                <div class="formField">
+                    <p>Do you have professional cleaning experience?</p>
+                    <label for="yes">Yes</label>
+                    <input type="radio" id="yes" name="proCleaner">
+                    <label for="no">No</label>
+                    <input type="radio" id="no" name="proCleaner">                    
+                </div>
+                <div class="formField">
+                    <p>Are you available to work weekends between the hours of 11 AM to 4 PM?</p>
+                    <label for="yes">Yes</label>
+                    <input type="radio" id="yes" name="availability">
+                    <label for="no">No</label>
+                    <input type="radio" id="no" name="availability">                    
+                </div>           
+                <button class="btn-custom" type="submit">Submit</button>
+            </form> 
+        </div>
+        
         <script src="script.js"></script>
         <script src="https://kit.fontawesome.com/46da648e7e.js" crossorigin="anonymous"></script>
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>

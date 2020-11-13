@@ -191,3 +191,34 @@ p {
 a {
     text-decoration: none;
 }
+
+.contactForm {
+  text-align: center;
+  background-color: #ef5d5d;
+  margin: auto;
+  padding: 15px;
+  width: 75%;
+  border-radius: 25px;
+  color: white;
+
+}
+
+.careersFormWrapper {
+  text-align: center;
+  padding: 25px;
+}
+
+.formField {
+  padding: 10px;
+}
+
+#uploadBox {
+  padding: 25 px;
+  border: dotted;
+}
+
+#contactSubmit {
+  border: none;
+  color: #ef5d5d;
+  background-color: #f4f4f4;
+}
