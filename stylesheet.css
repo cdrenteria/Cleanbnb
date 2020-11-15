@@ -2,6 +2,7 @@ body,
 html {
   height: 100%;
   font-family: "Montserrat", sans-serif;
+  overflow-x: hidden;
 }
 
 .navbar {
@@ -88,11 +89,13 @@ html {
   margin-top: auto;
   background-color: #f4f4f4;
 }
+
 .infoCard img {
   width: auto;
   max-height: 500px;
   margin: 10px 0 5px 0;
 }
+
 .cardText {
   text-align: center;
   padding: 10%;
