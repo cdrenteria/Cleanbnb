@@ -21,10 +21,18 @@ function showDivs(n) {
   var i;
   var x = document.getElementsByClassName("carouselslide");
   showIndex = slideIndex -1
-  if (n > 2) {slideIndex = 0}
-  if (n < 0) {slideIndex = x.length}
   for (i = 0; i < x.length; i++) {
      x[i].style.display = "none";  
   }
+  if (n > 3) {
+    slideIndex = 1;
+    showDivs(slideIndex);
+    return;
+  };
+  if (showIndex < 0) {
+    slideIndex = x.length;
+    showDivs(slideIndex);
+    return;
+  };
   x[showIndex].style.display = "flex";  
 }
