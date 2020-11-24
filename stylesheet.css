@@ -210,7 +210,7 @@ i {
   border: none;
   text-align: center;
 }
-
+/* Careers Page*/
 .careersForm {
   background-color: white;
   margin: auto;
@@ -230,7 +230,7 @@ i {
 a {
   text-decoration: none;
 }
-
+/* Careers Page*/
 .careersFormWrapper {
   text-align: center;
   padding: 25px;
@@ -250,7 +250,7 @@ a {
   color: #ef5d5d;
   background-color: #f4f4f4;
 }
-
+/* Footer*/
 footer {
   padding: 20px;
   text-align: center;
