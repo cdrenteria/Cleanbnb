@@ -113,6 +113,7 @@ i {
   width: auto;
   max-height: 30em;
   margin-bottom: 1em;
+  box-shadow: .5em 1em 20px darkgray;
 }
 
 .cardText {
@@ -128,6 +129,7 @@ i {
 .carouselslide {
   display: none;
   text-align: center;
+  box-shadow: .5em 1em 20px darkgray;
 }
 
 .carouselWrapper {
@@ -149,6 +151,11 @@ i {
 }
 
 /* Index Contact Form*/
+#contact {
+  background-color: #ef5d5d;
+
+}
+
 .contactForm {
   text-align: center;
   background-color: #ef5d5d;
@@ -157,6 +164,12 @@ i {
   border-radius: 25px;
   color: white;
   margin: 0em 5em;
+}
+.contactFormImg {
+  width: auto;
+  max-height: 30em;
+  margin-bottom: 1em;
+  box-shadow: .5em 1em 20px #b71212;
 }
 
 /* Services Page*/
