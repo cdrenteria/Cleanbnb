@@ -38,13 +38,13 @@
                             <a class="nav-link text-white rounded nav-custom" href="sign_up.html">Sign Up</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link"><i class="fab fa-twitter"></i></a>
+                            <a class="nav-link" href="https://www.twitter.com/GetCleanbnb"><i class="fab fa-twitter"></i></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link"><i class="fab fa-facebook-square"></i></a>
+                            <a class="nav-link" href="https://www.facebook.com/GetCleanbnb-347283569171291/?ref=page_internal"><i class="fab fa-facebook-square"></i></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link"><i class="fab fa-instagram"></i></a>
+                            <a class="nav-link" href="https://www.instagram.com/GetCleanbnb"><i class="fab fa-instagram"></i></a>
                         </li>
                     </ul>
                 </div>
@@ -54,8 +54,8 @@
             <h1 >Cleanbnb</h1>
             <p>Your new favorite specialized short term rental cleaners.</p>
             <div class="buttonsWrapper">
-                <button type="button" class="btn btn-lg btn-outline-light font-weight-bold">EXPLORE OUR SERVICES <i class="fas fa-arrow-circle-right" style="color: white;"></i></button>
-                <button type="button" class="btn btn-lg btn-custom text-white font-weight-bold" id="signUpBtn">SIGN UP <i class="fas fa-arrow-circle-right" style="color: white;"></i></button>
+                <a href="#services" class="btn btn-lg btn-outline-light font-weight-bold">EXPLORE OUR SERVICES <i class="fas fa-arrow-circle-right" style="color: white;"></i></a> 
+                <a href="sign_up.html" class="btn btn-lg btn-custom text-white font-weight-bold" id="signUpBtn">SIGN UP <i class="fas fa-arrow-circle-right" style="color: white;"></i></a>
             </div>
         </div>
     </div>
@@ -192,7 +192,7 @@
             </div>                        
         </div>        
     </div>
-
+    <?php include 'contact.php';?>
     <div class="infoCard" id="contact">
         <div class="container-fluid">
             <div class="row row-justify-content-center">
@@ -201,7 +201,7 @@
                 </div>
                 <div class="col col-auto">
                     <div class="contactForm">
-                        <form method="POST" action="contact.php">
+                        <form method="POST" action="$_SERVER['PHP_SELF']">
                             <div class="form-group">
                                 <label for="firstName">First Name</label>
                                 <input type="text" class="form-control" id="firstname">

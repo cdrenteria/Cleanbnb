@@ -20,25 +20,23 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item active">
-                            <a class="nav-link" href="services.html">Services</a>
+                            <a class="nav-link active" href="index.html">Home <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="about.html">About</a>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#services">Services</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="careers.html">Careers</a>
+                            <a class="nav-link" href="index.html#about">About</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="contact.html">Contact</a>
-                        </li>
+                            <a class="nav-link" href="index.html#contact">Contact</a>
+                            </li>
                         <li class="nav-item">
                             <a class="nav-link text-white rounded nav-custom" href="current_clients.html">Current Clients</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-white rounded nav-custom" href="sign_up.html">Sign Up</a>
+                            <a class="nav-link text-white rounded nav-custom active" href="sign_up.html">Sign Up</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link"><i class="fab fa-twitter"></i></a>
@@ -53,40 +51,35 @@
                 </div>
             </nav>
         </header>
-        <div class="pageWrapper">
-            <h2 class="servicesTitle">World Class Services</h2>
-            <div class="redLine"></div>
-            <div class="servicesWrapper">
-                <div class="serviceCard">
-                    <h4>Short-Term Rentals</h4>
-                    <div class="redLine"></div>
-                    <div class="cleaningDescription">
-                        <p>Customizeable Checklist</p>
-                        <p>Staging and Verification Photos</p>
-                        <p>Automated Scheduling</p>
-                        <p>Problem Reporting</p>
+        <?php ?> // YAY PHP !!!
+        <div class="section_start">
+            <div class="signUpForm">
+                <h2 class="servicesTitle">Contact Us</h2>
+                <form method="POST" action="$_SERVER['PHP_SELF']" class="contactForm">
+                    <div class="formField">
+                        <h5>First Name:</h5>
+                        <input type="text" id="firstName">
                     </div>
-                </div>
-                <div class="serviceCard">
-                    <h4>Recurring Residential</h4>
-                    <div class="redLine"></div>
-                    <div class="cleaningDescription">
-                        <p>Customizeable Checklist</p>
-                        <p>Staging and Verification Photos</p>
-                        <p>Automated Scheduling</p>
-                        <p>Inventory Reporting</p>
+                    <div class="formField">
+                        <h5>Last Name:</h5>
+                        <input type="text" id="lastName">
                     </div>
-                </div>
-                <div class="serviceCard">
-                    <h4>In Unit Linen Service</h4>
-                    <div class="redLine"></div>
-                    <div class="cleaningDescription">
-                        <p>Worry free linen cleaning</p>
-                        <p>In unit service for convience</p>
-                        <p>Problem Reporting</p>
-                        <p>Stain Removal</p>
+                    <div class="formField">
+                        <h5>Email:</h5>
+                        <input type="email" id="email">
                     </div>
-                </div>
+                    <div class="formField">
+                        <h5>Airbnb Host Profile:</h5>
+                        <input type="url" id="email">
+                    </div>
+                    <div class="formGroup">
+                        <h5>Comments</h5>
+                        <textarea name="comments" id="comments" cols="50" rows="10"></textarea>
+                    </div>
+                    <div class="formGroup">
+                        <button type="submit" id="contactSubmit">Submit</button>
+                    </div>                
+                </form>
             </div>
         </div>
         <footer>
@@ -100,4 +93,5 @@
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
     </body>
+
 </html>
