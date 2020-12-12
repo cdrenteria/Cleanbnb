@@ -171,51 +171,61 @@ i {
   margin-bottom: 1em;
   box-shadow: .5em 1em 20px #b71212;
 }
-
-/* Services Page*/
+/* Current Clients */
 .pageWrapper {
-  text-align: center;
   background-color: #f4f4f4;
   padding-bottom: 50px;
 }
-
 .servicesTitle {
-  padding-top: 50px;
-}
-.redLine {
-  width: 15%;
-  background-color: #ef5d5d;
-  height: 3px;
-  margin: auto;
-  margin-bottom: 50px;
+  padding-top: 5em;
+  text-align: center;
 }
 
 .servicesWrapper {
-  display: flex;
-  margin-left: 17%;
+  display: inline-flex;
+  padding: 2.5em;
+}
+
+.clientMenuOption {
+  text-decoration: none !important;
 }
 .serviceCard {
-  padding: 20px;
+  max-width: 100%;
+  height: 10em;
+  padding: 3.34em;
   background-color: white;
-  color: #ef5d5d;
-  margin: 10px;
-  align-content: center;
+  margin: 1em;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100%;
+  display: block;
+  color: #ef5d5d !important;  
+  filter: grayscale(100%);
+} 
+
+#feedback {
+  background-image: url("images/feedback.jpg");
 }
 
+#propertyImport {
+  background-image: url("images/property\ import.jpg");
+}
+
+#specialRequest {
+  background-image: url("images/special_request.jpg");
+}
 .serviceCard:hover {
   box-shadow: 5px 5px 5px grey;
+  filter: grayscale(0%);
 }
 
-.cleaningDescription {
-  text-align: center;
-  font-size: large;
-  padding-top: 10px;
-}
-
-.cleaningDescription p {
-  border-bottom: #f4f4f4 solid;
-  padding-top: 15px;
-  padding-bottom: 15px;
+.redLine {
+  width: 15em;
+  background-color: #ef5d5d;
+  height: 5px;
+  margin: auto;
+  margin-bottom: 5em;
 }
 
 .bg-custom {
