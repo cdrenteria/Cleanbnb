@@ -1,9 +1,57 @@
+/**************************************************************************************************************
+Table of Contents
+1.Sitewide Styles
+2.Javascript Used Styles
+3.Index
+4.Current Clients
+5.Sign Up
+6.Careers
+7.Footer
+**************************************************************************************************************/
+/* SiteWide Style*/
 body,
 html {
   height: 100%;
   font-family: "Montserrat", sans-serif;
   overflow-x: hidden;
 }
+
+i {
+  color: #ef5d5d;
+  justify-content: center;
+}
+
+.btn-custom {
+  background-color: #ef5d5d !important;
+  color: white;
+  border: none;
+}
+
+.col {
+  text-align: center;
+}
+
+.redLine {
+  width: 15em;
+  background-color: #ef5d5d;
+  height: 5px;
+  margin: auto;
+  margin-bottom: 5em;
+}
+
+.bg-custom {
+  background-color: #ef5d5d;
+  border: none;
+  text-align: center;
+}
+
+/* Javascript CSS*/
+
+.active {
+  border-bottom: 5px solid !important;
+  border-color: #ef5d5d !important;
+}
+
 /* Nav Bar*/
 .navbar {
   max-height: 100px;
@@ -36,12 +84,9 @@ html {
   margin-right: 10px;
   color: white;
 }
-/* Javascript CSS*/
-.active {
-  border-bottom: 5px solid !important;
-  border-color: #ef5d5d !important;
-}
+
 /* Cover Image and Welcome Text*/
+
 .bg {
   background-image: url("images/cover_image_2.jpg");
   background-size: cover;
@@ -74,12 +119,6 @@ html {
   display: inline-block;
 }
 
-.btn-custom {
-  background-color: #ef5d5d !important;
-  color: white;
-  border: none;
-}
-
 .sub-title {
   margin-bottom: 75px;
   margin: 1em;
@@ -89,16 +128,7 @@ html {
   padding: 5em 0;
 }
 
-i {
-  color: #ef5d5d;
-  justify-content: center;
-}
-
 /* Info Card Template */
-.col {
-  text-align: center;
-}
-
 .infoCard {
   padding: 5em 1em;
   background-color: #f4f4f4;
@@ -153,43 +183,43 @@ i {
 /* Index Contact Form*/
 #contact {
   background-color: #ef5d5d;
-
 }
 
-.contactForm {
-  text-align: center;
-  background-color: #ef5d5d;
-  width: 75%;
-  padding: 1em;
-  border-radius: 25px;
-  color: white;
-  margin: 0em 5em;
-}
 .contactFormImg {
-  width: auto;
   max-height: 30em;
   margin-bottom: 1em;
   box-shadow: .5em 1em 20px #b71212;
 }
+
+/* General Contact Forms*/
+.contactForm {
+  text-align: center;
+  align-items: center;
+  background-color: #ef5d5d;
+  max-width: 75%;
+  padding: 1em;
+  border-radius: 25px;
+  color: white;
+  margin: 0 15%;
+  display: flex;
+  flex-direction: column;
+}
+
 /* Current Clients */
 .pageWrapper {
   background-color: #f4f4f4;
   padding-bottom: 50px;
 }
-.servicesTitle {
-  padding-top: 5em;
-  text-align: center;
-}
 
-.servicesWrapper {
-  display: inline-flex;
-  padding: 2.5em;
+.sectionTitle {
+  padding-top: 2.5em;
+  text-align: center;
 }
 
 .clientMenuOption {
   text-decoration: none !important;
 }
-.serviceCard {
+.sectionCard {
   max-width: 100%;
   height: 10em;
   padding: 3.34em;
@@ -215,24 +245,13 @@ i {
 #specialRequest {
   background-image: url("images/special_request.jpg");
 }
-.serviceCard:hover {
+.sectionCard:hover {
   box-shadow: 5px 5px 5px grey;
   filter: grayscale(0%);
 }
+/* Feedback Page*/
 
-.redLine {
-  width: 15em;
-  background-color: #ef5d5d;
-  height: 5px;
-  margin: auto;
-  margin-bottom: 5em;
-}
 
-.bg-custom {
-  background-color: #ef5d5d;
-  border: none;
-  text-align: center;
-}
 /* Careers Page*/
 .careersForm {
   background-color: white;
@@ -251,7 +270,7 @@ i {
 }
 
 a {
-  text-decoration: none;
+  text-decoration: none !important;
 }
 /* Careers Page*/
 .careersFormWrapper {
