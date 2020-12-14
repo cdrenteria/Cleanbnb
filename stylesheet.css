@@ -21,10 +21,25 @@ i {
   justify-content: center;
 }
 
+/* BUTTON CUSTOM */
 .btn-custom {
   background-color: #ef5d5d !important;
   color: white;
   border: none;
+}
+
+.btn-custom i {
+  color: white;
+}
+
+.btn-custom:hover {
+  background: transparent  !important;
+  color: #ef5d5d !important;
+  border: solid 1px #ef5d5d;
+}
+ 
+.btn-custom:hover i.fas {
+  color: #ef5d5d;
 }
 
 .col {
@@ -119,6 +134,9 @@ i {
   display: inline-block;
 }
 
+.btn-outline-light:hover i.fas {
+  color: black !important;
+}
 .sub-title {
   margin-bottom: 75px;
   margin: 1em;
@@ -140,8 +158,9 @@ i {
 }
 
 .infoCardImg {
-  width: auto;
-  max-height: 30em;
+  max-width: 100%;
+  min-width: 15em;
+  height: auto;
   margin-bottom: 1em;
   box-shadow: .5em 1em 20px darkgray;
 }
@@ -186,7 +205,9 @@ i {
 }
 
 .contactFormImg {
-  max-height: 30em;
+  max-width: 100%;
+  min-width: 15em;
+  height: auto;
   margin-bottom: 1em;
   box-shadow: .5em 1em 20px #b71212;
 }
@@ -227,27 +248,29 @@ i {
   margin: 1em;
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
   height: 100%;
   display: block;
   color: #ef5d5d !important;  
-  filter: grayscale(100%);
+  background-color: gray;
+  background-blend-mode: luminosity;
+  background-position: center center;
+  overflow: hidden;
 } 
 
-#feedback {
+ #feedback {
   background-image: url("images/feedback.jpg");
-}
+} 
 
-#propertyImport {
+ #propertyImport {
   background-image: url("images/property\ import.jpg");
-}
+} 
 
 #specialRequest {
   background-image: url("images/special_request.jpg");
 }
 .sectionCard:hover {
   box-shadow: 5px 5px 5px grey;
-  filter: grayscale(0%);
+  background-blend-mode: normal;
 }
 /* Feedback Page*/
 
