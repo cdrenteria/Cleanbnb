@@ -10,7 +10,7 @@
 <body>
     <div>
         <header>
-            <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white">
                 <a class="navbar-brand" href="#index.html">
                     <img class="logo" src="images/Cleanbnb.png" alt="Cleanbnb Logo">
                 </a>
@@ -23,7 +23,6 @@
                             <a class="nav-link active" href="index.html">Home <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
-                        <li class="nav-item">
                             <a class="nav-link" href="index.html#services">Services</a>
                         </li>
                         <li class="nav-item">
@@ -31,56 +30,52 @@
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="index.html#contact">Contact</a>
-                            </li>
+                        </li>
                         <li class="nav-item">
                             <a class="nav-link text-white rounded nav-custom" href="current_clients.html">Current Clients</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-white rounded nav-custom active" href="sign_up.html">Sign Up</a>
+                            <a class="nav-link text-white rounded nav-custom" href="sign_up.html">Sign Up</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link"><i class="fab fa-twitter"></i></a>
+                            <a target="_blank" class="nav-link" href="https://www.twitter.com/GetCleanbnb"><i class="fab fa-twitter"></i></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link"><i class="fab fa-facebook-square"></i></a>
+                            <a target="_blank" class="nav-link" href="https://www.facebook.com/GetCleanbnb-347283569171291/?ref=page_internal"><i class="fab fa-facebook-square"></i></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link"><i class="fab fa-instagram"></i></a>
+                            <a target="_blank" class="nav-link" href="https://www.instagram.com/GetCleanbnb"><i class="fab fa-instagram"></i></a>
                         </li>
                     </ul>
                 </div>
             </nav>
         </header>
-        <?php ?> // YAY PHP !!!
-        <div class="section_start">
-            <div class="signUpForm">
-                <h2 class="servicesTitle">Contact Us</h2>
-                <form method="POST" action="$_SERVER['PHP_SELF']" class="contactForm">
-                    <div class="formField">
-                        <h5>First Name:</h5>
-                        <input type="text" id="firstName">
-                    </div>
-                    <div class="formField">
-                        <h5>Last Name:</h5>
-                        <input type="text" id="lastName">
-                    </div>
-                    <div class="formField">
-                        <h5>Email:</h5>
-                        <input type="email" id="email">
-                    </div>
-                    <div class="formField">
-                        <h5>Airbnb Host Profile:</h5>
-                        <input type="url" id="email">
-                    </div>
-                    <div class="formGroup">
-                        <h5>Comments</h5>
-                        <textarea name="comments" id="comments" cols="50" rows="10"></textarea>
-                    </div>
-                    <div class="formGroup">
-                        <button type="submit" id="contactSubmit">Submit</button>
-                    </div>                
-                </form>
-            </div>
+        <div class="form-group">
+            <h2 class="sectionTitle">Contact Us</h2>
+            <form method="POST" action="../contact.php" class="contactForm" >
+                <div class="formField">
+                    <h5>First Name:</h5>
+                    <input class="form-control" type="text" id="firstName">
+                </div>
+                <div class="formField">
+                    <h5>Last Name:</h5>
+                    <input class="form-control" type="text" id="lastName">
+                </div>
+                <div class="formField">
+                    <h5>Email:</h5>
+                    <input class="form-control" type="email" id="email">
+                </div>
+                <div class="formField">
+                    <input type="file" class="form-control-file" id="upload">
+                </div>
+                <div class="formField">
+                    <label for="comments">Example textarea</label>
+                    <textarea class="form-control" id="comments" rows="3" cols="40"></textarea>
+                </div>
+                <div class="">
+                    <button  class="form-control" type="submit" id="contactSubmit">Submit</button>
+                </div>                
+            </form>
         </div>
         <footer>
             <a href="#navbarNav">Top of the Page</a><br>
@@ -93,5 +88,4 @@
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
     </body>
-
 </html>
